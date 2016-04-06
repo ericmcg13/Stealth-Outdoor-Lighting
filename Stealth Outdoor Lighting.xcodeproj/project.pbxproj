@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D91DC4F1CB58B9B00549635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */; };
+		9D91DC511CB58B9B00549635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC501CB58B9B00549635 /* ViewController.swift */; };
+		9D91DC541CB58B9B00549635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC521CB58B9B00549635 /* Main.storyboard */; };
+		9D91DC561CB58B9B00549635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC551CB58B9B00549635 /* Assets.xcassets */; };
+		9D91DC591CB58B9B00549635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC571CB58B9B00549635 /* LaunchScreen.storyboard */; };
+		9D91DC641CB58B9B00549635 /* Stealth_Outdoor_LightingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC631CB58B9B00549635 /* Stealth_Outdoor_LightingTests.swift */; };
+		9D91DC6F1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC6E1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D91DC601CB58B9B00549635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D91DC431CB58B9A00549635 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D91DC4A1CB58B9A00549635;
+			remoteInfo = "Stealth Outdoor Lighting";
+		};
+		9D91DC6B1CB58B9B00549635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D91DC431CB58B9A00549635 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D91DC4A1CB58B9A00549635;
+			remoteInfo = "Stealth Outdoor Lighting";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D91DC4B1CB58B9A00549635 /* Stealth Outdoor Lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stealth Outdoor Lighting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D91DC501CB58B9B00549635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D91DC531CB58B9B00549635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D91DC551CB58B9B00549635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D91DC581CB58B9B00549635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D91DC5A1CB58B9B00549635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D91DC5F1CB58B9B00549635 /* Stealth Outdoor LightingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stealth Outdoor LightingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D91DC631CB58B9B00549635 /* Stealth_Outdoor_LightingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stealth_Outdoor_LightingTests.swift; sourceTree = "<group>"; };
+		9D91DC651CB58B9B00549635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D91DC6A1CB58B9B00549635 /* Stealth Outdoor LightingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stealth Outdoor LightingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D91DC6E1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stealth_Outdoor_LightingUITests.swift; sourceTree = "<group>"; };
+		9D91DC701CB58B9B00549635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D91DC481CB58B9A00549635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D91DC5C1CB58B9B00549635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D91DC671CB58B9B00549635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D91DC421CB58B9A00549635 = {
+			isa = PBXGroup;
+			children = (
+				9D91DC4D1CB58B9B00549635 /* Stealth Outdoor Lighting */,
+				9D91DC621CB58B9B00549635 /* Stealth Outdoor LightingTests */,
+				9D91DC6D1CB58B9B00549635 /* Stealth Outdoor LightingUITests */,
+				9D91DC4C1CB58B9A00549635 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D91DC4C1CB58B9A00549635 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC4B1CB58B9A00549635 /* Stealth Outdoor Lighting.app */,
+				9D91DC5F1CB58B9B00549635 /* Stealth Outdoor LightingTests.xctest */,
+				9D91DC6A1CB58B9B00549635 /* Stealth Outdoor LightingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D91DC4D1CB58B9B00549635 /* Stealth Outdoor Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */,
+				9D91DC501CB58B9B00549635 /* ViewController.swift */,
+				9D91DC521CB58B9B00549635 /* Main.storyboard */,
+				9D91DC551CB58B9B00549635 /* Assets.xcassets */,
+				9D91DC571CB58B9B00549635 /* LaunchScreen.storyboard */,
+				9D91DC5A1CB58B9B00549635 /* Info.plist */,
+			);
+			path = "Stealth Outdoor Lighting";
+			sourceTree = "<group>";
+		};
+		9D91DC621CB58B9B00549635 /* Stealth Outdoor LightingTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC631CB58B9B00549635 /* Stealth_Outdoor_LightingTests.swift */,
+				9D91DC651CB58B9B00549635 /* Info.plist */,
+			);
+			path = "Stealth Outdoor LightingTests";
+			sourceTree = "<group>";
+		};
+		9D91DC6D1CB58B9B00549635 /* Stealth Outdoor LightingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC6E1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift */,
+				9D91DC701CB58B9B00549635 /* Info.plist */,
+			);
+			path = "Stealth Outdoor LightingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D91DC4A1CB58B9A00549635 /* Stealth Outdoor Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D91DC731CB58B9B00549635 /* Build configuration list for PBXNativeTarget "Stealth Outdoor Lighting" */;
+			buildPhases = (
+				9D91DC471CB58B9A00549635 /* Sources */,
+				9D91DC481CB58B9A00549635 /* Frameworks */,
+				9D91DC491CB58B9A00549635 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stealth Outdoor Lighting";
+			productName = "Stealth Outdoor Lighting";
+			productReference = 9D91DC4B1CB58B9A00549635 /* Stealth Outdoor Lighting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D91DC5E1CB58B9B00549635 /* Stealth Outdoor LightingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D91DC761CB58B9B00549635 /* Build configuration list for PBXNativeTarget "Stealth Outdoor LightingTests" */;
+			buildPhases = (
+				9D91DC5B1CB58B9B00549635 /* Sources */,
+				9D91DC5C1CB58B9B00549635 /* Frameworks */,
+				9D91DC5D1CB58B9B00549635 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D91DC611CB58B9B00549635 /* PBXTargetDependency */,
+			);
+			name = "Stealth Outdoor LightingTests";
+			productName = "Stealth Outdoor LightingTests";
+			productReference = 9D91DC5F1CB58B9B00549635 /* Stealth Outdoor LightingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D91DC691CB58B9B00549635 /* Stealth Outdoor LightingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D91DC791CB58B9B00549635 /* Build configuration list for PBXNativeTarget "Stealth Outdoor LightingUITests" */;
+			buildPhases = (
+				9D91DC661CB58B9B00549635 /* Sources */,
+				9D91DC671CB58B9B00549635 /* Frameworks */,
+				9D91DC681CB58B9B00549635 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D91DC6C1CB58B9B00549635 /* PBXTargetDependency */,
+			);
+			name = "Stealth Outdoor LightingUITests";
+			productName = "Stealth Outdoor LightingUITests";
+			productReference = 9D91DC6A1CB58B9B00549635 /* Stealth Outdoor LightingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D91DC431CB58B9A00549635 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Eric McGaughey";
+				TargetAttributes = {
+					9D91DC4A1CB58B9A00549635 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					9D91DC5E1CB58B9B00549635 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 9D91DC4A1CB58B9A00549635;
+					};
+					9D91DC691CB58B9B00549635 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 9D91DC4A1CB58B9A00549635;
+					};
+				};
+			};
+			buildConfigurationList = 9D91DC461CB58B9A00549635 /* Build configuration list for PBXProject "Stealth Outdoor Lighting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D91DC421CB58B9A00549635;
+			productRefGroup = 9D91DC4C1CB58B9A00549635 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D91DC4A1CB58B9A00549635 /* Stealth Outdoor Lighting */,
+				9D91DC5E1CB58B9B00549635 /* Stealth Outdoor LightingTests */,
+				9D91DC691CB58B9B00549635 /* Stealth Outdoor LightingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D91DC491CB58B9A00549635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D91DC591CB58B9B00549635 /* LaunchScreen.storyboard in Resources */,
+				9D91DC561CB58B9B00549635 /* Assets.xcassets in Resources */,
+				9D91DC541CB58B9B00549635 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D91DC5D1CB58B9B00549635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D91DC681CB58B9B00549635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D91DC471CB58B9A00549635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D91DC511CB58B9B00549635 /* ViewController.swift in Sources */,
+				9D91DC4F1CB58B9B00549635 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D91DC5B1CB58B9B00549635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D91DC641CB58B9B00549635 /* Stealth_Outdoor_LightingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D91DC661CB58B9B00549635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D91DC6F1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D91DC611CB58B9B00549635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D91DC4A1CB58B9A00549635 /* Stealth Outdoor Lighting */;
+			targetProxy = 9D91DC601CB58B9B00549635 /* PBXContainerItemProxy */;
+		};
+		9D91DC6C1CB58B9B00549635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D91DC4A1CB58B9A00549635 /* Stealth Outdoor Lighting */;
+			targetProxy = 9D91DC6B1CB58B9B00549635 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D91DC521CB58B9B00549635 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D91DC531CB58B9B00549635 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D91DC571CB58B9B00549635 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D91DC581CB58B9B00549635 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D91DC711CB58B9B00549635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D91DC721CB58B9B00549635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D91DC741CB58B9B00549635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Stealth Outdoor Lighting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "McGaughey.Stealth-Outdoor-Lighting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9D91DC751CB58B9B00549635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Stealth Outdoor Lighting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "McGaughey.Stealth-Outdoor-Lighting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9D91DC771CB58B9B00549635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Stealth Outdoor LightingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "McGaughey.Stealth-Outdoor-LightingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stealth Outdoor Lighting.app/Stealth Outdoor Lighting";
+			};
+			name = Debug;
+		};
+		9D91DC781CB58B9B00549635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Stealth Outdoor LightingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "McGaughey.Stealth-Outdoor-LightingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stealth Outdoor Lighting.app/Stealth Outdoor Lighting";
+			};
+			name = Release;
+		};
+		9D91DC7A1CB58B9B00549635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Stealth Outdoor LightingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "McGaughey.Stealth-Outdoor-LightingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Stealth Outdoor Lighting";
+			};
+			name = Debug;
+		};
+		9D91DC7B1CB58B9B00549635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Stealth Outdoor LightingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "McGaughey.Stealth-Outdoor-LightingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Stealth Outdoor Lighting";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D91DC461CB58B9A00549635 /* Build configuration list for PBXProject "Stealth Outdoor Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D91DC711CB58B9B00549635 /* Debug */,
+				9D91DC721CB58B9B00549635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D91DC731CB58B9B00549635 /* Build configuration list for PBXNativeTarget "Stealth Outdoor Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D91DC741CB58B9B00549635 /* Debug */,
+				9D91DC751CB58B9B00549635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9D91DC761CB58B9B00549635 /* Build configuration list for PBXNativeTarget "Stealth Outdoor LightingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D91DC771CB58B9B00549635 /* Debug */,
+				9D91DC781CB58B9B00549635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9D91DC791CB58B9B00549635 /* Build configuration list for PBXNativeTarget "Stealth Outdoor LightingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D91DC7A1CB58B9B00549635 /* Debug */,
+				9D91DC7B1CB58B9B00549635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D91DC431CB58B9A00549635 /* Project object */;
+}

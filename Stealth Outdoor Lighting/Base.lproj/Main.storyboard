@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IN3-Q9-OQP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l8j-SL-lR6">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -9,7 +8,7 @@
         <!--Project Gallery-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stealth_Outdoor_Lighting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProductGalleryViewController" customModule="Stealth_Outdoor_Lighting" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -65,7 +64,14 @@
                             <constraint firstItem="WIz-bq-eJp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rXG-Sv-MJa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Project Gallery" id="uN4-Qz-9gq"/>
+                    <navigationItem key="navigationItem" title="Project Gallery" id="uN4-Qz-9gq">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="7BB-Ef-Nse">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="homeBtn:" destination="BYZ-38-t0r" id="JNL-UX-9hG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="collectionView" destination="WIz-bq-eJp" id="VTF-xU-cOP"/>
@@ -74,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192" y="304"/>
+            <point key="canvasLocation" x="947" y="-614"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="oUz-6W-FvU">
@@ -107,12 +113,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksT-J3-Z5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="304"/>
+            <point key="canvasLocation" x="1381" y="-614"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="xmj-NC-iwT">
             <objects>
-                <viewController id="l8j-SL-lR6" customClass="HomeViewController" customModule="Stealth_Outdoor_Lighting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" id="l8j-SL-lR6" customClass="HomeViewController" customModule="Stealth_Outdoor_Lighting" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IPQ-gG-lo3"/>
                         <viewControllerLayoutGuide type="bottom" id="T5s-SP-OQe"/>
@@ -139,6 +145,9 @@
                                         <state key="normal" title="Request a Quote" backgroundImage="quote">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="m6i-u2-h8P" kind="show" id="iQ6-cy-cHW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlN-iq-cjb">
                                         <rect key="frame" x="0.0" y="274" width="320" height="137"/>
@@ -146,6 +155,9 @@
                                         <state key="normal" title="Repairs and Maintenance" backgroundImage="repair">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="0rN-xn-443" kind="show" id="29R-GM-Crc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAS-i1-xER">
                                         <rect key="frame" x="0.0" y="411" width="320" height="137"/>
@@ -153,6 +165,9 @@
                                         <state key="normal" title="About Us" backgroundImage="about">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="CJw-Ly-7mK" kind="show" id="ZG6-RQ-uBj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -191,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBE-ar-HBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="304"/>
+            <point key="canvasLocation" x="75" y="296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CEc-Y0-m7v">
@@ -210,9 +225,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cf9-SW-pyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="304"/>
+            <point key="canvasLocation" x="504" y="-614"/>
         </scene>
-        <!--Quote View Controller-->
+        <!--Request a Quote-->
         <scene sceneID="hYv-Zh-eOm">
             <objects>
                 <viewController id="IN3-Q9-OQP" customClass="QuoteViewController" customModule="Stealth_Outdoor_Lighting" customModuleProvider="target" sceneMemberID="viewController">
@@ -224,8 +239,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageplaceholder 2" translatesAutoresizingMaskIntoConstraints="NO" id="rv6-Rr-e0J" userLabel="Placeholder">
+                                <rect key="frame" x="16" y="159" width="288" height="250"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JRL-YF-ezY">
-                                <rect key="frame" x="0.0" y="20" width="320" height="496"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="452"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMZ-Es-lCG">
                                 <rect key="frame" x="8" y="526" width="110" height="37"/>
@@ -253,7 +271,7 @@
                                     <action selector="sendAction:" destination="IN3-Q9-OQP" eventType="touchUpInside" id="qW6-Vc-qqj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap a photo of the of the area the you would like a lighting quote for and we will respond with a quick quote." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8d-hA-Ph2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap a photo of the area you would like a quote for (ex. front of house, back of house, patio, etc.)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8d-hA-Ph2">
                                 <rect key="frame" x="60" y="233" width="201" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="101" id="MzU-Fm-8UY"/>
@@ -266,20 +284,36 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rv6-Rr-e0J" firstAttribute="centerX" secondItem="Mkh-20-LCd" secondAttribute="centerX" id="3l8-Tl-NDE"/>
+                            <constraint firstItem="rv6-Rr-e0J" firstAttribute="leading" secondItem="Mkh-20-LCd" secondAttribute="leadingMargin" id="8Tl-Ne-HkX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rv6-Rr-e0J" secondAttribute="trailing" id="HUz-at-H5V"/>
                             <constraint firstAttribute="trailing" secondItem="tkk-mJ-M0u" secondAttribute="trailing" constant="8" id="KA4-25-eVS"/>
                             <constraint firstAttribute="trailing" secondItem="JRL-YF-ezY" secondAttribute="trailing" id="N5i-rW-Ra3"/>
                             <constraint firstItem="a8d-hA-Ph2" firstAttribute="centerX" secondItem="Mkh-20-LCd" secondAttribute="centerX" id="PoM-HR-Zzp"/>
                             <constraint firstItem="h4W-IM-SKa" firstAttribute="top" secondItem="jMZ-Es-lCG" secondAttribute="bottom" constant="5" id="QhE-cx-x78"/>
                             <constraint firstItem="jMZ-Es-lCG" firstAttribute="leading" secondItem="Mkh-20-LCd" secondAttribute="leading" constant="8" id="STt-Z2-2qG"/>
                             <constraint firstItem="a8d-hA-Ph2" firstAttribute="centerY" secondItem="Mkh-20-LCd" secondAttribute="centerY" id="aCz-jn-ysx"/>
+                            <constraint firstItem="rv6-Rr-e0J" firstAttribute="centerY" secondItem="Mkh-20-LCd" secondAttribute="centerY" id="eJZ-f6-f8c"/>
                             <constraint firstItem="JRL-YF-ezY" firstAttribute="top" secondItem="am5-ya-5OQ" secondAttribute="bottom" id="hck-Np-fWa"/>
                             <constraint firstItem="h4W-IM-SKa" firstAttribute="top" secondItem="tkk-mJ-M0u" secondAttribute="bottom" constant="5" id="iPy-xR-tbH"/>
                             <constraint firstItem="JRL-YF-ezY" firstAttribute="leading" secondItem="Mkh-20-LCd" secondAttribute="leading" id="sVm-ms-BeS"/>
                             <constraint firstItem="tkk-mJ-M0u" firstAttribute="top" secondItem="JRL-YF-ezY" secondAttribute="bottom" constant="10" id="xAn-LS-Xt6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Request a Quote" id="OgP-PC-s0w">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="mE3-3v-jBu">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="homeBtn:" destination="IN3-Q9-OQP" id="hId-wV-FWy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="bookmarks" id="fH8-y9-7TZ">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="imagePlaceHolder" destination="rv6-Rr-e0J" id="Abc-Lm-w7R"/>
                         <outlet property="imageView" destination="JRL-YF-ezY" id="DHt-rK-n43"/>
                         <outlet property="label" destination="a8d-hA-Ph2" id="hON-9e-zOL"/>
                         <outlet property="sendBtn" destination="tkk-mJ-M0u" id="BlC-s4-uM5"/>
@@ -288,12 +322,368 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="85y-d1-FHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="1015"/>
+            <point key="canvasLocation" x="947" y="122"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lee-6I-Geb">
+            <objects>
+                <viewController id="bCf-fB-Lrv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uJt-h3-CT6"/>
+                        <viewControllerLayoutGuide type="bottom" id="LY8-dL-11e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o4B-Av-ZfB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to request a quote:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qay-mR-pyJ">
+                                <rect key="frame" x="71" y="28" width="178" height="25"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a photo of the area you would like to provide lighting for. (The front of the house for example)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A28-OW-xir">
+                                <rect key="frame" x="16" y="68" width="289" height="105"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dayfronthouse" translatesAutoresizingMaskIntoConstraints="NO" id="qFX-lf-Q1J">
+                                <rect key="frame" x="40" y="174" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tips for good photos: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq8-Eu-LOm">
+                                <rect key="frame" x="77" y="334" width="166" height="21"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• Shoot in Landscape " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2L-VX-xH0">
+                                <rect key="frame" x="15" y="363" width="169" height="21"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d13-um-ywI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381" y="122"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NAk-F0-sEU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m6i-u2-h8P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jV6-HZ-vBe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IN3-Q9-OQP" kind="relationship" relationship="rootViewController" id="yXT-qL-2VQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCE-Ks-YjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="122"/>
+        </scene>
+        <!--Repair-->
+        <scene sceneID="8dC-2D-Myo">
+            <objects>
+                <viewController id="lbC-WI-kU4" customClass="RepairViewController" customModule="Stealth_Outdoor_Lighting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Luo-BS-P33"/>
+                        <viewControllerLayoutGuide type="bottom" id="SMu-GM-g0k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GNj-Mq-ViA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose from the list below and we will contact you shortly to get your lighting system sorted." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GQ-1V-GHb">
+                                <rect key="frame" x="16" y="72" width="288" height="73"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gears" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-zU-XPp">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="juz-94-ccK">
+                                <rect key="frame" x="16" y="165" width="288" height="403"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyd-wC-NC3">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="87"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                        <state key="normal" title="Wire Cut">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wireAction:" destination="lbC-WI-kU4" eventType="touchUpInside" id="yBs-UF-vRG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rz-vu-tCX">
+                                        <rect key="frame" x="0.0" y="105" width="288" height="88"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                        <state key="normal" title="Replace Lamps">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lampsAction:" destination="lbC-WI-kU4" eventType="touchUpInside" id="G66-VE-KCC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v39-BN-taj">
+                                        <rect key="frame" x="0.0" y="211" width="288" height="87"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                        <state key="normal" title="System Timer">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timerAction:" destination="lbC-WI-kU4" eventType="touchUpInside" id="fkd-8w-Int"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEg-ef-UNA">
+                                        <rect key="frame" x="0.0" y="316" width="288" height="87"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                        <state key="normal" title="Other">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="otherAction:" destination="lbC-WI-kU4" eventType="touchUpInside" id="yBX-GZ-TYS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vyd-wC-NC3" firstAttribute="centerX" secondItem="juz-94-ccK" secondAttribute="centerX" id="81K-Gb-AFH"/>
+                                    <constraint firstItem="xEg-ef-UNA" firstAttribute="width" secondItem="Vyd-wC-NC3" secondAttribute="width" id="EDW-BX-wiG"/>
+                                    <constraint firstItem="0Rz-vu-tCX" firstAttribute="height" secondItem="Vyd-wC-NC3" secondAttribute="height" id="IRr-CQ-RDO"/>
+                                    <constraint firstItem="v39-BN-taj" firstAttribute="height" secondItem="Vyd-wC-NC3" secondAttribute="height" id="aTt-qT-H2Y"/>
+                                    <constraint firstItem="0Rz-vu-tCX" firstAttribute="centerX" secondItem="juz-94-ccK" secondAttribute="centerX" id="c98-jg-Y8Y"/>
+                                    <constraint firstItem="v39-BN-taj" firstAttribute="width" secondItem="Vyd-wC-NC3" secondAttribute="width" id="eGz-Ub-kVd"/>
+                                    <constraint firstItem="v39-BN-taj" firstAttribute="centerX" secondItem="juz-94-ccK" secondAttribute="centerX" id="juf-65-n1y"/>
+                                    <constraint firstItem="xEg-ef-UNA" firstAttribute="height" secondItem="Vyd-wC-NC3" secondAttribute="height" id="o0G-Qn-Uae"/>
+                                    <constraint firstItem="0Rz-vu-tCX" firstAttribute="width" secondItem="Vyd-wC-NC3" secondAttribute="width" id="s6N-p9-VVl"/>
+                                    <constraint firstItem="xEg-ef-UNA" firstAttribute="centerX" secondItem="juz-94-ccK" secondAttribute="centerX" id="z5J-rp-fzc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YC6-zU-XPp" firstAttribute="leading" secondItem="GNj-Mq-ViA" secondAttribute="leading" id="4WV-Bn-XfY"/>
+                            <constraint firstItem="9GQ-1V-GHb" firstAttribute="leading" secondItem="GNj-Mq-ViA" secondAttribute="leadingMargin" id="CTN-aa-4mI"/>
+                            <constraint firstItem="SMu-GM-g0k" firstAttribute="top" secondItem="juz-94-ccK" secondAttribute="bottom" id="G4D-7o-Zvt"/>
+                            <constraint firstItem="juz-94-ccK" firstAttribute="leading" secondItem="GNj-Mq-ViA" secondAttribute="leadingMargin" id="Oob-Sp-4il"/>
+                            <constraint firstItem="9GQ-1V-GHb" firstAttribute="top" secondItem="Luo-BS-P33" secondAttribute="bottom" constant="8" id="PqT-Az-06P"/>
+                            <constraint firstItem="juz-94-ccK" firstAttribute="top" secondItem="9GQ-1V-GHb" secondAttribute="bottom" constant="20" id="PtS-Qm-fnd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="juz-94-ccK" secondAttribute="trailing" id="bUx-7w-KHa"/>
+                            <constraint firstItem="SMu-GM-g0k" firstAttribute="top" secondItem="YC6-zU-XPp" secondAttribute="bottom" id="l1t-ko-g0Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9GQ-1V-GHb" secondAttribute="trailing" id="mFi-Kr-mbR"/>
+                            <constraint firstAttribute="trailing" secondItem="YC6-zU-XPp" secondAttribute="trailing" id="nCh-Oh-SfH"/>
+                            <constraint firstItem="YC6-zU-XPp" firstAttribute="top" secondItem="Luo-BS-P33" secondAttribute="bottom" id="p1y-As-uvF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Repair" id="GEA-DJ-VqC">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="tbM-El-ueq">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="homeBtn:" destination="lbC-WI-kU4" id="lWi-xl-wtw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lampsBtn" destination="0Rz-vu-tCX" id="G3b-6q-GuI"/>
+                        <outlet property="otherBtn" destination="xEg-ef-UNA" id="J45-q7-bJD"/>
+                        <outlet property="timerBtn" destination="v39-BN-taj" id="r6T-fu-TxI"/>
+                        <outlet property="wireBtn" destination="Vyd-wC-NC3" id="B4V-NG-DCH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6VT-0e-4Lb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="812"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7X7-DH-XCl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0rN-xn-443" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pWX-MA-Q3l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lbC-WI-kU4" kind="relationship" relationship="rootViewController" id="9uu-Np-BiJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENB-Qv-vTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="812"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="AFn-tp-1dL">
+            <objects>
+                <viewController id="JrT-b0-s9y" customClass="AboutUsViewController" customModule="Stealth_Outdoor_Lighting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d8V-xd-AnL"/>
+                        <viewControllerLayoutGuide type="bottom" id="d44-Em-z3F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kxn-Eq-JNt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gy-g9-f74">
+                                <rect key="frame" x="0.0" y="64" width="320" height="1936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPO-Fu-Ela" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="8" width="320" height="1928"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-uj-sm7">
+                                                <rect key="frame" x="10" y="371" width="300" height="217"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="647" id="adL-Eh-y5K"/>
+                                                </constraints>
+                                                <string key="text">Stealth Outdoor Lighting has been servicing Southeast Michigan for the past 20 years. We have consistently utilized the most efficient and best engineered products to provide sustainable, cost-effective, turn-key systems that provide decades of beautiful and safe, night-time environments. </string>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="adL-Eh-y5K"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_header" translatesAutoresizingMaskIntoConstraints="NO" id="VZd-Hy-faB">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="361"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="223" id="1cQ-yX-wQh"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="1cQ-yX-wQh"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badlight" translatesAutoresizingMaskIntoConstraints="NO" id="VEE-QW-jHQ">
+                                                <rect key="frame" x="8" y="588" width="312" height="248"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="248" id="dEF-Zw-Umc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6o-J1-gaw">
+                                                <rect key="frame" x="12" y="870" width="300" height="217"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="647" id="Mhd-J7-NsJ"/>
+                                                </constraints>
+                                                <string key="text">Stealth Outdoor Lighting has been servicing Southeast Michigan for the past 20 years. We have consistently utilized the most efficient and best engineered products to provide sustainable, cost-effective, turn-key systems that provide decades of beautiful and safe, night-time environments. </string>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Mhd-J7-NsJ"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="5k7-uj-sm7" firstAttribute="top" secondItem="VZd-Hy-faB" secondAttribute="bottom" constant="10" id="0dy-8h-IiG"/>
+                                            <constraint firstItem="Y6o-J1-gaw" firstAttribute="top" secondItem="VEE-QW-jHQ" secondAttribute="bottom" constant="34" id="1z9-4x-rqB"/>
+                                            <constraint firstItem="VZd-Hy-faB" firstAttribute="top" secondItem="CPO-Fu-Ela" secondAttribute="top" id="DPC-jl-bOl"/>
+                                            <constraint firstItem="5k7-uj-sm7" firstAttribute="trailing" secondItem="VZd-Hy-faB" secondAttribute="trailing" id="G7D-JQ-i3h"/>
+                                            <constraint firstItem="VZd-Hy-faB" firstAttribute="trailing" secondItem="VEE-QW-jHQ" secondAttribute="trailing" id="HXS-0u-FEI"/>
+                                            <constraint firstAttribute="height" constant="952" id="Ikc-i7-r4d"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y6o-J1-gaw" secondAttribute="trailing" constant="8" id="JH3-0M-7uD"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="VEE-QW-jHQ" secondAttribute="trailing" constant="-8" id="PjX-4Q-7pg"/>
+                                            <constraint firstAttribute="trailing" secondItem="5k7-uj-sm7" secondAttribute="trailing" constant="10" id="RHR-M0-LTM"/>
+                                            <constraint firstItem="5k7-uj-sm7" firstAttribute="leading" secondItem="CPO-Fu-Ela" secondAttribute="leading" constant="10" id="TfF-6b-GuC"/>
+                                            <constraint firstAttribute="bottom" secondItem="5k7-uj-sm7" secondAttribute="bottom" id="ZWf-31-BEH"/>
+                                            <constraint firstItem="VEE-QW-jHQ" firstAttribute="top" secondItem="5k7-uj-sm7" secondAttribute="bottom" id="bxU-xj-kI4"/>
+                                            <constraint firstItem="5k7-uj-sm7" firstAttribute="leading" secondItem="VZd-Hy-faB" secondAttribute="leading" id="cVb-oW-5kW"/>
+                                            <constraint firstAttribute="height" constant="1928" id="dVs-pB-eGf"/>
+                                            <constraint firstItem="Y6o-J1-gaw" firstAttribute="leading" secondItem="CPO-Fu-Ela" secondAttribute="leading" constant="12" id="reP-6w-sDm"/>
+                                            <constraint firstItem="VEE-QW-jHQ" firstAttribute="leading" secondItem="CPO-Fu-Ela" secondAttribute="leadingMargin" id="t6c-Um-4vQ"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ikc-i7-r4d"/>
+                                                <exclude reference="G7D-JQ-i3h"/>
+                                                <exclude reference="ZWf-31-BEH"/>
+                                                <exclude reference="cVb-oW-5kW"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="CPO-Fu-Ela" secondAttribute="trailing" constant="-8" id="LAS-2A-aZQ"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="CPO-Fu-Ela" secondAttribute="bottom" id="boJ-SN-6iU"/>
+                                    <constraint firstItem="CPO-Fu-Ela" firstAttribute="leading" secondItem="5gy-g9-f74" secondAttribute="leadingMargin" constant="-8" id="rGe-y1-2LN"/>
+                                    <constraint firstItem="CPO-Fu-Ela" firstAttribute="top" secondItem="5gy-g9-f74" secondAttribute="topMargin" id="vN6-gB-ZYk"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5gy-g9-f74" firstAttribute="top" secondItem="d8V-xd-AnL" secondAttribute="bottom" id="0aJ-Hp-bGa"/>
+                            <constraint firstItem="VZd-Hy-faB" firstAttribute="width" secondItem="Kxn-Eq-JNt" secondAttribute="width" id="O2d-mP-wG4"/>
+                            <constraint firstItem="d44-Em-z3F" firstAttribute="top" secondItem="5gy-g9-f74" secondAttribute="bottom" id="c7V-bM-kzj"/>
+                            <constraint firstItem="5gy-g9-f74" firstAttribute="leading" secondItem="Kxn-Eq-JNt" secondAttribute="leading" id="raR-OT-tAN"/>
+                            <constraint firstAttribute="trailing" secondItem="5gy-g9-f74" secondAttribute="trailing" id="rlr-h9-yCA"/>
+                            <constraint firstItem="CPO-Fu-Ela" firstAttribute="width" secondItem="Kxn-Eq-JNt" secondAttribute="width" id="tuR-sX-8Sq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="nOf-ua-zTh">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="maP-Tp-ai9">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="homeBtn:" destination="JrT-b0-s9y" id="lNC-AH-NJg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hl-NB-Zmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="2248"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="27k-WV-gzL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CJw-Ly-7mK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6w0-gx-OiY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JrT-b0-s9y" kind="relationship" relationship="rootViewController" id="Rpk-Rc-b3r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSN-bs-y0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="1532"/>
         </scene>
     </scenes>
     <resources>
         <image name="about" width="415" height="180"/>
+        <image name="about_header" width="526" height="361"/>
+        <image name="badlight" width="519" height="361"/>
+        <image name="dayfronthouse" width="986" height="653"/>
         <image name="gallery" width="415" height="180"/>
+        <image name="gears" width="526" height="720"/>
+        <image name="imageplaceholder 2" width="300" height="250"/>
         <image name="quote" width="415" height="180"/>
         <image name="repair" width="415" height="180"/>
     </resources>

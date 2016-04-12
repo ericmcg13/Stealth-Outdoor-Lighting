@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProductGalleryViewController.swift
 //  Stealth Outdoor Lighting
 //
 //  Created by Eric McGaughey on 4/6/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProductGalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -33,12 +33,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return imageArray.count
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
         self.performSegueWithIdentifier("showImage", sender: self)
         
     }
@@ -53,10 +51,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             vc.image = self.imageArray[indexPath.row]!
             
-            
-            
         }
     }
+    
+    @IBAction func homeBtn(sender: UIBarButtonItem) {
+        
+        if let homeVC = storyboard!.instantiateViewControllerWithIdentifier("homeVC") as? HomeViewController {
+            presentViewController(homeVC, animated: true, completion: nil)
+        }
+        
+    }
+    
 
 }
 

@@ -7,26 +7,20 @@
 //
 
 import UIKit
-import MessageUI
 
-class QuoteViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, MFMessageComposeViewControllerDelegate {
+class QuoteViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var takePhotoBtn: UIButton!
     @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet weak var imagePlaceHolder: UIImageView!
     
-    var imagePicker = UIImagePickerController()
-    var messageController = MFMessageComposeViewController()
-    
+    let imagePicker = UIImagePickerController()
+    let messageComposer = MessageComposer()
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
-        
-        imagePicker.delegate = self
-        messageController.delegate = self
-        messageController.messageComposeDelegate = self
-        
         
         // Style the Take Photo button
         self.takePhotoBtn.layer.borderWidth = 1.0
@@ -35,13 +29,15 @@ class QuoteViewController: UIViewController, UINavigationControllerDelegate, UII
         // Style the Send button
         self.sendBtn.layer.borderWidth = 1.0
         self.sendBtn.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        self.imagePlaceHolder.alpha = 0.3
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imagePicker.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,7 +49,7 @@ class QuoteViewController: UIViewController, UINavigationControllerDelegate, UII
         
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        imageView.contentMode = .ScaleAspectFit
+        imageView.contentMode = .ScaleToFill
         
     }
     
@@ -61,34 +57,27 @@ class QuoteViewController: UIViewController, UINavigationControllerDelegate, UII
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+    @IBAction func homeBtn(sender: UIBarButtonItem) {
         
-        switch (result) {
-        case MessageComposeResultCancelled:
-            self.dismissViewControllerAnimated(true, completion: nil)
-            break
-        case MessageComposeResultSent:
-            break
-        case MessageComposeResultFailed:
-            break
-        default:
-            break
+        if let homeVC = storyboard!.instantiateViewControllerWithIdentifier("homeVC") as? HomeViewController {
+            presentViewController(homeVC, animated: true, completion: nil)
         }
-
-            
-        self.dismissViewControllerAnimated(true, completion: nil)
-
         
     }
     
     @IBAction func takePhotoAction(sender: UIButton) {
-        
         camera()
     }
     
     @IBAction func sendAction(sender: UIButton) {
-        
-        sendQuote()
+        if imageView.image == nil {
+            let alert = UIAlertController(title: "No Image", message: "You need to submit a photo before you can send your quote request.", preferredStyle: UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(okAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }else {
+            sendQuote()
+        }
     }
     
     func camera() {
@@ -114,18 +103,14 @@ class QuoteViewController: UIViewController, UINavigationControllerDelegate, UII
     
     func sendQuote() {
         
-        if MFMessageComposeViewController.canSendText() {
+        if messageComposer.canSendText() {
             
             let photoData = UIImageJPEGRepresentation(imageView.image!, 1.0)
-            
-            messageController.body = "I would like a quote for lighting please."
-            messageController.recipients = ["2487658633"]
-            messageController.addAttachmentData(photoData!, typeIdentifier: "image/jpeg", filename: "PhotoQuote")
-            
-            presentViewController(messageController, animated: true, completion: nil)
+            let messageVC = messageComposer.sendMessage("New quote.", attachment: photoData)
+            self.presentViewController(messageVC, animated: true, completion: nil)
             
         }else {
-            print("No Luck")
+            print("Cannot send text.")
         }
     }
     

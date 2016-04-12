@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9D91DC4F1CB58B9B00549635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */; };
-		9D91DC511CB58B9B00549635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC501CB58B9B00549635 /* ViewController.swift */; };
+		9D91DC511CB58B9B00549635 /* ProductGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC501CB58B9B00549635 /* ProductGalleryViewController.swift */; };
 		9D91DC541CB58B9B00549635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC521CB58B9B00549635 /* Main.storyboard */; };
 		9D91DC641CB58B9B00549635 /* Stealth_Outdoor_LightingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC631CB58B9B00549635 /* Stealth_Outdoor_LightingTests.swift */; };
 		9D91DC6F1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC6E1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift */; };
 		9D91DC7F1CB5912500549635 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC7E1CB5912500549635 /* CollectionViewCell.swift */; };
 		9D91DC811CB5915700549635 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC801CB5915700549635 /* ImageViewController.swift */; };
-		9D91DC831CB65C4A00549635 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC821CB65C4A00549635 /* HomeViewController.swift */; };
 		9D91DC851CB6692200549635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC841CB6692200549635 /* Assets.xcassets */; };
 		9D91DC881CB6738800549635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC571CB58B9B00549635 /* LaunchScreen.storyboard */; };
 		9D91DC8A1CB6742800549635 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC891CB6742800549635 /* QuoteViewController.swift */; };
+		9D91DC8C1CB6B90500549635 /* RepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC8B1CB6B90500549635 /* RepairViewController.swift */; };
+		9D91DC8E1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC8D1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png */; };
+		9D91DC901CB7CDB200549635 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC8F1CB7CDB200549635 /* AboutUsViewController.swift */; };
+		9D91DC931CBAA4AC00549635 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC921CBAA4AC00549635 /* HomeViewController.swift */; };
+		9D91DC991CBAD0F800549635 /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC981CBAD0F800549635 /* MessageComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,7 @@
 /* Begin PBXFileReference section */
 		9D91DC4B1CB58B9A00549635 /* Stealth Outdoor Lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stealth Outdoor Lighting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D91DC501CB58B9B00549635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D91DC501CB58B9B00549635 /* ProductGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGalleryViewController.swift; sourceTree = "<group>"; };
 		9D91DC531CB58B9B00549635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D91DC581CB58B9B00549635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D91DC5A1CB58B9B00549635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +56,13 @@
 		9D91DC701CB58B9B00549635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D91DC7E1CB5912500549635 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../CollectionViewCell.swift; sourceTree = "<group>"; };
 		9D91DC801CB5915700549635 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ../ImageViewController.swift; sourceTree = "<group>"; };
-		9D91DC821CB65C4A00549635 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9D91DC841CB6692200549635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D91DC891CB6742800549635 /* QuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		9D91DC8B1CB6B90500549635 /* RepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepairViewController.swift; sourceTree = "<group>"; };
+		9D91DC8D1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 12 + DSC_0088 + Triangle 3.png"; sourceTree = "<group>"; };
+		9D91DC8F1CB7CDB200549635 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		9D91DC921CBAA4AC00549635 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9D91DC981CBAD0F800549635 /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +114,14 @@
 			isa = PBXGroup;
 			children = (
 				9D91DC841CB6692200549635 /* Assets.xcassets */,
+				9D91DC921CBAA4AC00549635 /* HomeViewController.swift */,
+				9D91DC981CBAD0F800549635 /* MessageComposer.swift */,
 				9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */,
-				9D91DC7E1CB5912500549635 /* CollectionViewCell.swift */,
-				9D91DC821CB65C4A00549635 /* HomeViewController.swift */,
-				9D91DC891CB6742800549635 /* QuoteViewController.swift */,
-				9D91DC801CB5915700549635 /* ImageViewController.swift */,
-				9D91DC501CB58B9B00549635 /* ViewController.swift */,
-				9D91DC521CB58B9B00549635 /* Main.storyboard */,
-				9D91DC571CB58B9B00549635 /* LaunchScreen.storyboard */,
+				9D91DC911CBAA22F00549635 /* Gallery */,
+				9D91DC941CBAA80F00549635 /* Quote */,
+				9D91DC961CBAA83800549635 /* Repair */,
+				9D91DC951CBAA83100549635 /* About */,
+				9D91DC971CBAA84100549635 /* Storyboards */,
 				9D91DC5A1CB58B9B00549635 /* Info.plist */,
 			);
 			path = "Stealth Outdoor Lighting";
@@ -131,10 +139,54 @@
 		9D91DC6D1CB58B9B00549635 /* Stealth Outdoor LightingUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9D91DC8D1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png */,
 				9D91DC6E1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift */,
 				9D91DC701CB58B9B00549635 /* Info.plist */,
 			);
 			path = "Stealth Outdoor LightingUITests";
+			sourceTree = "<group>";
+		};
+		9D91DC911CBAA22F00549635 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC501CB58B9B00549635 /* ProductGalleryViewController.swift */,
+				9D91DC7E1CB5912500549635 /* CollectionViewCell.swift */,
+				9D91DC801CB5915700549635 /* ImageViewController.swift */,
+			);
+			name = Gallery;
+			sourceTree = "<group>";
+		};
+		9D91DC941CBAA80F00549635 /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC891CB6742800549635 /* QuoteViewController.swift */,
+			);
+			name = Quote;
+			sourceTree = "<group>";
+		};
+		9D91DC951CBAA83100549635 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC8F1CB7CDB200549635 /* AboutUsViewController.swift */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		9D91DC961CBAA83800549635 /* Repair */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC8B1CB6B90500549635 /* RepairViewController.swift */,
+			);
+			name = Repair;
+			sourceTree = "<group>";
+		};
+		9D91DC971CBAA84100549635 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9D91DC521CB58B9B00549635 /* Main.storyboard */,
+				9D91DC571CB58B9B00549635 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +257,7 @@
 				TargetAttributes = {
 					9D91DC4A1CB58B9A00549635 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 494B8QEREY;
 					};
 					9D91DC5E1CB58B9B00549635 = {
 						CreatedOnToolsVersion = 7.3;
@@ -258,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D91DC8E1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D91DC831CB65C4A00549635 /* HomeViewController.swift in Sources */,
-				9D91DC511CB58B9B00549635 /* ViewController.swift in Sources */,
+				9D91DC901CB7CDB200549635 /* AboutUsViewController.swift in Sources */,
+				9D91DC8C1CB6B90500549635 /* RepairViewController.swift in Sources */,
+				9D91DC511CB58B9B00549635 /* ProductGalleryViewController.swift in Sources */,
+				9D91DC931CBAA4AC00549635 /* HomeViewController.swift in Sources */,
 				9D91DC4F1CB58B9B00549635 /* AppDelegate.swift in Sources */,
 				9D91DC8A1CB6742800549635 /* QuoteViewController.swift in Sources */,
+				9D91DC991CBAD0F800549635 /* MessageComposer.swift in Sources */,
 				9D91DC811CB5915700549635 /* ImageViewController.swift in Sources */,
 				9D91DC7F1CB5912500549635 /* CollectionViewCell.swift in Sources */,
 			);
@@ -415,11 +472,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Stealth Outdoor Lighting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "McGaughey.Stealth-Outdoor-Lighting";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -427,11 +487,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Stealth Outdoor Lighting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "McGaughey.Stealth-Outdoor-Lighting";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -500,6 +563,7 @@
 				9D91DC751CB58B9B00549635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D91DC761CB58B9B00549635 /* Build configuration list for PBXNativeTarget "Stealth Outdoor LightingTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +572,7 @@
 				9D91DC781CB58B9B00549635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D91DC791CB58B9B00549635 /* Build configuration list for PBXNativeTarget "Stealth Outdoor LightingUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +581,7 @@
 				9D91DC7B1CB58B9B00549635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

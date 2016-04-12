@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="1sF-tX-TYA">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,20 +14,20 @@
                         <viewControllerLayoutGuide type="bottom" id="7Cn-sY-Lrd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="52E-La-YGs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-bf-kyr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Design and Coded by Eric McGaughey ©2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSY-fl-bqN">
-                                <rect key="frame" x="73" y="631" width="229" height="16"/>
+                                <rect key="frame" x="46" y="532" width="229" height="16"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stealth Outdoor Lighting" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mT-1N-cnS">
-                                <rect key="frame" x="37" y="274" width="300" height="120"/>
+                                <rect key="frame" x="10" y="70" width="300" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="623-De-hVC"/>
                                     <constraint firstAttribute="width" constant="300" id="djo-8n-y2w"/>
@@ -36,20 +36,32 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Serving Michigan for over 20 years.&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZO-4q-umm">
+                                <rect key="frame" x="18" y="198" width="283" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gDg-iR-ZQ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xR4-bf-kyr" secondAttribute="trailing" id="B7j-gZ-j7r"/>
-                            <constraint firstItem="6mT-1N-cnS" firstAttribute="centerY" secondItem="52E-La-YGs" secondAttribute="centerY" id="Nsr-kn-Lkf"/>
+                            <constraint firstItem="6mT-1N-cnS" firstAttribute="centerY" secondItem="52E-La-YGs" secondAttribute="centerY" constant="-154.5" id="Nsr-kn-Lkf"/>
                             <constraint firstItem="xR4-bf-kyr" firstAttribute="leading" secondItem="52E-La-YGs" secondAttribute="leading" id="VEB-Ji-wGR"/>
                             <constraint firstItem="OSY-fl-bqN" firstAttribute="centerX" secondItem="52E-La-YGs" secondAttribute="centerX" id="XH6-fK-ziA"/>
+                            <constraint firstItem="zZO-4q-umm" firstAttribute="top" secondItem="6mT-1N-cnS" secondAttribute="bottom" constant="8" symbolic="YES" id="XKO-g9-huS"/>
                             <constraint firstItem="6mT-1N-cnS" firstAttribute="centerX" secondItem="52E-La-YGs" secondAttribute="centerX" id="cUd-wm-2Sc"/>
+                            <constraint firstItem="zZO-4q-umm" firstAttribute="centerX" secondItem="52E-La-YGs" secondAttribute="centerX" id="ebI-D3-BQC"/>
                             <constraint firstItem="xR4-bf-kyr" firstAttribute="top" secondItem="5Pb-Rz-dOX" secondAttribute="bottom" id="hho-HW-cHu"/>
                             <constraint firstItem="7Cn-sY-Lrd" firstAttribute="top" secondItem="xR4-bf-kyr" secondAttribute="bottom" id="iTk-Gl-AKC"/>
                             <constraint firstItem="7Cn-sY-Lrd" firstAttribute="top" secondItem="OSY-fl-bqN" secondAttribute="bottom" constant="20" id="ig6-Oi-pd4"/>
+                            <constraint firstItem="zZO-4q-umm" firstAttribute="leading" secondItem="52E-La-YGs" secondAttribute="leadingMargin" constant="2" id="zwS-9h-NCb"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48b-KG-isa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

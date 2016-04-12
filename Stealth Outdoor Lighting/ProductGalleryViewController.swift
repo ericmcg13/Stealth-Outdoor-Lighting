@@ -12,16 +12,14 @@ class ProductGalleryViewController: UIViewController, UICollectionViewDelegate, 
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let imageArray = [imageName("pic1"), imageName("pic2"), imageName("pic3"), imageName("pic4"), imageName("pic5")]
+    let imageArray = [imageName("pic1"), imageName("pic2"), imageName("pic3"), imageName("pic4"), imageName("pic5"), imageName("pic6"), imageName("pic7"), imageName("pic8"), imageName("pic9"), imageName("pic10"), imageName("pic11"), imageName("pic12"), imageName("pic13"), imageName("pic14"), imageName("pic15"), imageName("pic16"), imageName("pic17"), imageName("pic18"), imageName("pic19"), imageName("pic20"), imageName("pic21"), imageName("pic22"), imageName("pic23"), imageName("pic24")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -59,10 +57,7 @@ class ProductGalleryViewController: UIViewController, UICollectionViewDelegate, 
         if let homeVC = storyboard!.instantiateViewControllerWithIdentifier("homeVC") as? HomeViewController {
             presentViewController(homeVC, animated: true, completion: nil)
         }
-        
     }
-    
-
 }
 
 func imageName(name: String) -> UIImage? {

@@ -14,7 +14,6 @@
 		9D91DC6F1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC6E1CB58B9B00549635 /* Stealth_Outdoor_LightingUITests.swift */; };
 		9D91DC7F1CB5912500549635 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC7E1CB5912500549635 /* CollectionViewCell.swift */; };
 		9D91DC811CB5915700549635 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC801CB5915700549635 /* ImageViewController.swift */; };
-		9D91DC851CB6692200549635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC841CB6692200549635 /* Assets.xcassets */; };
 		9D91DC881CB6738800549635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC571CB58B9B00549635 /* LaunchScreen.storyboard */; };
 		9D91DC8A1CB6742800549635 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC891CB6742800549635 /* QuoteViewController.swift */; };
 		9D91DC8C1CB6B90500549635 /* RepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC8B1CB6B90500549635 /* RepairViewController.swift */; };
@@ -22,6 +21,8 @@
 		9D91DC901CB7CDB200549635 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC8F1CB7CDB200549635 /* AboutUsViewController.swift */; };
 		9D91DC931CBAA4AC00549635 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC921CBAA4AC00549635 /* HomeViewController.swift */; };
 		9D91DC991CBAD0F800549635 /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC981CBAD0F800549635 /* MessageComposer.swift */; };
+		9DEA611A1CBCF84B00742A60 /* HowToQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA61191CBCF84B00742A60 /* HowToQuoteViewController.swift */; };
+		9DEA611C1CBD07D500742A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA611B1CBD07D500742A60 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +57,14 @@
 		9D91DC701CB58B9B00549635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D91DC7E1CB5912500549635 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../CollectionViewCell.swift; sourceTree = "<group>"; };
 		9D91DC801CB5915700549635 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ../ImageViewController.swift; sourceTree = "<group>"; };
-		9D91DC841CB6692200549635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D91DC891CB6742800549635 /* QuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		9D91DC8B1CB6B90500549635 /* RepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepairViewController.swift; sourceTree = "<group>"; };
 		9D91DC8D1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 12 + DSC_0088 + Triangle 3.png"; sourceTree = "<group>"; };
 		9D91DC8F1CB7CDB200549635 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		9D91DC921CBAA4AC00549635 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9D91DC981CBAD0F800549635 /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageComposer.swift; sourceTree = "<group>"; };
+		9DEA61191CBCF84B00742A60 /* HowToQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToQuoteViewController.swift; sourceTree = "<group>"; };
+		9DEA611B1CBD07D500742A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +115,7 @@
 		9D91DC4D1CB58B9B00549635 /* Stealth Outdoor Lighting */ = {
 			isa = PBXGroup;
 			children = (
-				9D91DC841CB6692200549635 /* Assets.xcassets */,
+				9DEA611B1CBD07D500742A60 /* Assets.xcassets */,
 				9D91DC921CBAA4AC00549635 /* HomeViewController.swift */,
 				9D91DC981CBAD0F800549635 /* MessageComposer.swift */,
 				9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */,
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				9D91DC891CB6742800549635 /* QuoteViewController.swift */,
+				9DEA61191CBCF84B00742A60 /* HowToQuoteViewController.swift */,
 			);
 			name = Quote;
 			sourceTree = "<group>";
@@ -295,7 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D91DC881CB6738800549635 /* LaunchScreen.storyboard in Resources */,
-				9D91DC851CB6692200549635 /* Assets.xcassets in Resources */,
+				9DEA611C1CBD07D500742A60 /* Assets.xcassets in Resources */,
 				9D91DC541CB58B9B00549635 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +330,7 @@
 				9D91DC511CB58B9B00549635 /* ProductGalleryViewController.swift in Sources */,
 				9D91DC931CBAA4AC00549635 /* HomeViewController.swift in Sources */,
 				9D91DC4F1CB58B9B00549635 /* AppDelegate.swift in Sources */,
+				9DEA611A1CBCF84B00742A60 /* HowToQuoteViewController.swift in Sources */,
 				9D91DC8A1CB6742800549635 /* QuoteViewController.swift in Sources */,
 				9D91DC991CBAD0F800549635 /* MessageComposer.swift in Sources */,
 				9D91DC811CB5915700549635 /* ImageViewController.swift in Sources */,

@@ -10,7 +10,6 @@ import UIKit
 
 class QuoteViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var takePhotoBtn: UIButton!
     @IBOutlet weak var sendBtn: UIButton!
@@ -87,8 +86,6 @@ class QuoteViewController: UIViewController, UINavigationControllerDelegate, UII
             imagePicker.sourceType = .Camera
             imagePicker.cameraCaptureMode = .Photo
             imagePicker.allowsEditing = false
-            
-            label.alpha = 0.0
             
             presentViewController(imagePicker, animated: true, completion: nil)
             

@@ -271,16 +271,6 @@
                                     <action selector="sendAction:" destination="IN3-Q9-OQP" eventType="touchUpInside" id="qW6-Vc-qqj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap a photo of the area you would like a quote for (ex. front of house, back of house, patio, etc.)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8d-hA-Ph2">
-                                <rect key="frame" x="60" y="233" width="201" height="101"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="101" id="MzU-Fm-8UY"/>
-                                    <constraint firstAttribute="width" constant="201" id="zU9-xD-E2p"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -289,10 +279,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="rv6-Rr-e0J" secondAttribute="trailing" id="HUz-at-H5V"/>
                             <constraint firstAttribute="trailing" secondItem="tkk-mJ-M0u" secondAttribute="trailing" constant="8" id="KA4-25-eVS"/>
                             <constraint firstAttribute="trailing" secondItem="JRL-YF-ezY" secondAttribute="trailing" id="N5i-rW-Ra3"/>
-                            <constraint firstItem="a8d-hA-Ph2" firstAttribute="centerX" secondItem="Mkh-20-LCd" secondAttribute="centerX" id="PoM-HR-Zzp"/>
                             <constraint firstItem="h4W-IM-SKa" firstAttribute="top" secondItem="jMZ-Es-lCG" secondAttribute="bottom" constant="5" id="QhE-cx-x78"/>
                             <constraint firstItem="jMZ-Es-lCG" firstAttribute="leading" secondItem="Mkh-20-LCd" secondAttribute="leading" constant="8" id="STt-Z2-2qG"/>
-                            <constraint firstItem="a8d-hA-Ph2" firstAttribute="centerY" secondItem="Mkh-20-LCd" secondAttribute="centerY" id="aCz-jn-ysx"/>
                             <constraint firstItem="rv6-Rr-e0J" firstAttribute="centerY" secondItem="Mkh-20-LCd" secondAttribute="centerY" id="eJZ-f6-f8c"/>
                             <constraint firstItem="JRL-YF-ezY" firstAttribute="top" secondItem="am5-ya-5OQ" secondAttribute="bottom" id="hck-Np-fWa"/>
                             <constraint firstItem="h4W-IM-SKa" firstAttribute="top" secondItem="tkk-mJ-M0u" secondAttribute="bottom" constant="5" id="iPy-xR-tbH"/>
@@ -307,15 +295,21 @@
                                 <action selector="homeBtn:" destination="IN3-Q9-OQP" id="hId-wV-FWy"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="bookmarks" id="fH8-y9-7TZ">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="ywY-7W-y5m">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="JQ8-uy-L80">
+                                <rect key="frame" x="282" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="bCf-fB-Lrv" kind="show" id="4pE-uz-jpp"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="imagePlaceHolder" destination="rv6-Rr-e0J" id="Abc-Lm-w7R"/>
                         <outlet property="imageView" destination="JRL-YF-ezY" id="DHt-rK-n43"/>
-                        <outlet property="label" destination="a8d-hA-Ph2" id="hON-9e-zOL"/>
                         <outlet property="sendBtn" destination="tkk-mJ-M0u" id="BlC-s4-uM5"/>
                         <outlet property="takePhotoBtn" destination="jMZ-Es-lCG" id="L6c-Xv-EEt"/>
                     </connections>
@@ -324,53 +318,145 @@
             </objects>
             <point key="canvasLocation" x="947" y="122"/>
         </scene>
-        <!--View Controller-->
+        <!--How To Quote View Controller-->
         <scene sceneID="lee-6I-Geb">
             <objects>
-                <viewController id="bCf-fB-Lrv" sceneMemberID="viewController">
+                <viewController id="bCf-fB-Lrv" customClass="HowToQuoteViewController" customModule="Stealth_Outdoor_Lighting" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uJt-h3-CT6"/>
                         <viewControllerLayoutGuide type="bottom" id="LY8-dL-11e"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o4B-Av-ZfB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to request a quote:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qay-mR-pyJ">
-                                <rect key="frame" x="71" y="28" width="178" height="25"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a photo of the area you would like to provide lighting for. (The front of the house for example)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A28-OW-xir">
-                                <rect key="frame" x="16" y="68" width="289" height="105"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dayfronthouse" translatesAutoresizingMaskIntoConstraints="NO" id="qFX-lf-Q1J">
-                                <rect key="frame" x="40" y="174" width="240" height="128"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tips for good photos: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq8-Eu-LOm">
-                                <rect key="frame" x="77" y="334" width="166" height="21"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• Shoot in Landscape " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2L-VX-xH0">
-                                <rect key="frame" x="15" y="363" width="169" height="21"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmx-vf-L65">
+                                <rect key="frame" x="0.0" y="8" width="319" height="672"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Request a Quote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qay-mR-pyJ">
+                                        <rect key="frame" x="37" y="20" width="247" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="maR-o1-uat"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a photo of the area you would like to provide lighting for. (The front of the house for example)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A28-OW-xir">
+                                        <rect key="frame" x="20" y="114" width="279" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="qUD-wX-lyX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dayfronthouse" translatesAutoresizingMaskIntoConstraints="NO" id="qFX-lf-Q1J">
+                                        <rect key="frame" x="40" y="205" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Gzf-fU-VTT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKC-av-Jes">
+                                        <rect key="frame" x="30" y="423" width="259" height="131"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="131" id="zNv-FL-ciC"/>
+                                        </constraints>
+                                        <string key="text">If you would prefer to meet with our lighting designer for a more in-depth discussion on your system's layout, schedule a free consultation at: </string>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 1: In App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-X5-qFR">
+                                        <rect key="frame" x="107" y="73" width="143" height="39"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-BookIta" family="Bodoni 72" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="Ool-is-8kQ">
+                                        <rect key="frame" x="69" y="79" width="35" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="cFI-2a-8rM"/>
+                                            <constraint firstAttribute="height" constant="26" id="fg5-ni-IoE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 2: Consultation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTp-ge-02C">
+                                        <rect key="frame" x="94" y="383" width="174" height="39"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-BookIta" family="Bodoni 72" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="PRo-NQ-MN7">
+                                        <rect key="frame" x="51" y="383" width="35" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="8Ki-Xm-X7E"/>
+                                            <constraint firstAttribute="width" constant="35" id="bFC-Uh-r18"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcg-kF-klO">
+                                        <rect key="frame" x="65" y="562" width="189" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="189" id="Kae-Oi-Gqv"/>
+                                            <constraint firstAttribute="height" constant="39" id="zpS-Lb-akN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="25"/>
+                                        <state key="normal" title="248-765-8633">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="phoneNumberAction:" destination="bCf-fB-Lrv" eventType="touchUpInside" id="bRK-KS-4zf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qay-mR-pyJ" firstAttribute="centerX" secondItem="qFX-lf-Q1J" secondAttribute="centerX" id="0gM-yO-0hl"/>
+                                    <constraint firstItem="YKC-av-Jes" firstAttribute="leading" secondItem="fmx-vf-L65" secondAttribute="leading" constant="30" id="0vr-J5-BME"/>
+                                    <constraint firstItem="PRo-NQ-MN7" firstAttribute="leading" secondItem="fmx-vf-L65" secondAttribute="leading" constant="51" id="1SP-i4-y1o"/>
+                                    <constraint firstItem="qFX-lf-Q1J" firstAttribute="top" secondItem="A28-OW-xir" secondAttribute="bottom" constant="15" id="24k-gc-jQs"/>
+                                    <constraint firstAttribute="trailing" secondItem="A28-OW-xir" secondAttribute="trailing" constant="20" id="2Kf-Tq-MSq"/>
+                                    <constraint firstItem="A28-OW-xir" firstAttribute="leading" secondItem="fmx-vf-L65" secondAttribute="leading" constant="20" id="6Kc-55-s9i"/>
+                                    <constraint firstItem="qFX-lf-Q1J" firstAttribute="centerX" secondItem="YKC-av-Jes" secondAttribute="centerX" id="6x3-XH-I5W"/>
+                                    <constraint firstItem="bfk-X5-qFR" firstAttribute="leading" secondItem="Ool-is-8kQ" secondAttribute="trailing" constant="3" id="Cpb-Cl-qzn"/>
+                                    <constraint firstItem="qay-mR-pyJ" firstAttribute="leading" secondItem="fmx-vf-L65" secondAttribute="leading" constant="37" id="EDm-1k-kYY"/>
+                                    <constraint firstItem="Ool-is-8kQ" firstAttribute="centerY" secondItem="bfk-X5-qFR" secondAttribute="centerY" id="Fcc-J7-h1j"/>
+                                    <constraint firstItem="Ool-is-8kQ" firstAttribute="leading" secondItem="fmx-vf-L65" secondAttribute="leading" constant="69" id="Lq0-vQ-W8r"/>
+                                    <constraint firstItem="Jcg-kF-klO" firstAttribute="top" secondItem="YKC-av-Jes" secondAttribute="bottom" constant="8" symbolic="YES" id="Nh8-iw-sFr"/>
+                                    <constraint firstItem="jTp-ge-02C" firstAttribute="leading" secondItem="PRo-NQ-MN7" secondAttribute="trailing" constant="8" symbolic="YES" id="Pb7-Vt-rHN"/>
+                                    <constraint firstItem="YKC-av-Jes" firstAttribute="top" secondItem="PRo-NQ-MN7" secondAttribute="bottom" constant="8" symbolic="YES" id="QSD-WZ-zug"/>
+                                    <constraint firstItem="PRo-NQ-MN7" firstAttribute="top" secondItem="qFX-lf-Q1J" secondAttribute="bottom" constant="50" id="RHg-rz-HPe"/>
+                                    <constraint firstItem="A28-OW-xir" firstAttribute="centerX" secondItem="qFX-lf-Q1J" secondAttribute="centerX" id="U0H-Dt-J56"/>
+                                    <constraint firstItem="YKC-av-Jes" firstAttribute="top" secondItem="jTp-ge-02C" secondAttribute="bottom" constant="1" id="UEO-QI-7ji"/>
+                                    <constraint firstItem="bfk-X5-qFR" firstAttribute="top" secondItem="qay-mR-pyJ" secondAttribute="bottom" constant="22" id="VzF-9y-263"/>
+                                    <constraint firstItem="qFX-lf-Q1J" firstAttribute="leading" secondItem="fmx-vf-L65" secondAttribute="leading" constant="40" id="YKs-Ui-dlh"/>
+                                    <constraint firstItem="A28-OW-xir" firstAttribute="top" secondItem="bfk-X5-qFR" secondAttribute="bottom" constant="2" id="cXN-In-I9N"/>
+                                    <constraint firstAttribute="trailing" secondItem="jTp-ge-02C" secondAttribute="trailing" constant="51" id="fLJ-bz-YqN"/>
+                                    <constraint firstItem="qay-mR-pyJ" firstAttribute="top" secondItem="fmx-vf-L65" secondAttribute="top" constant="20" id="gNt-q4-Sdi"/>
+                                    <constraint firstItem="PRo-NQ-MN7" firstAttribute="top" secondItem="jTp-ge-02C" secondAttribute="top" id="hzB-gG-X1h"/>
+                                    <constraint firstItem="YKC-av-Jes" firstAttribute="centerX" secondItem="Jcg-kF-klO" secondAttribute="centerX" id="nCL-aT-rqp"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jcg-kF-klO" secondAttribute="bottom" constant="71" id="tbW-S4-QGz"/>
+                                    <constraint firstItem="A28-OW-xir" firstAttribute="centerX" secondItem="fmx-vf-L65" secondAttribute="centerX" id="vrQ-4g-kPH"/>
+                                    <constraint firstAttribute="trailing" secondItem="bfk-X5-qFR" secondAttribute="trailing" constant="69" id="vvK-Xv-TiZ"/>
+                                    <constraint firstItem="A28-OW-xir" firstAttribute="top" secondItem="Ool-is-8kQ" secondAttribute="bottom" constant="9" id="x19-yL-hNU"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fmx-vf-L65" firstAttribute="leading" secondItem="o4B-Av-ZfB" secondAttribute="leading" id="CKx-pV-zUF"/>
+                            <constraint firstItem="fmx-vf-L65" firstAttribute="top" secondItem="o4B-Av-ZfB" secondAttribute="topMargin" constant="8" id="IJI-Bd-EBa"/>
+                            <constraint firstAttribute="bottom" secondItem="fmx-vf-L65" secondAttribute="bottom" constant="20" symbolic="YES" id="NZu-7I-3jz"/>
+                            <constraint firstItem="fmx-vf-L65" firstAttribute="centerX" secondItem="o4B-Av-ZfB" secondAttribute="centerX" id="ybo-ao-fqX"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="700"/>
+                    <connections>
+                        <outlet property="phoneNumber" destination="Jcg-kF-klO" id="JZ1-Ia-umf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d13-um-ywI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1381" y="122"/>
+            <point key="canvasLocation" x="1388" y="188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NAk-F0-sEU">
@@ -540,30 +626,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gy-g9-f74">
-                                <rect key="frame" x="0.0" y="64" width="320" height="1936"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="2000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPO-Fu-Ela" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="8" width="320" height="1928"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1928"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-uj-sm7">
-                                                <rect key="frame" x="10" y="371" width="300" height="217"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="647" id="adL-Eh-y5K"/>
-                                                </constraints>
-                                                <string key="text">Stealth Outdoor Lighting has been servicing Southeast Michigan for the past 20 years. We have consistently utilized the most efficient and best engineered products to provide sustainable, cost-effective, turn-key systems that provide decades of beautiful and safe, night-time environments. </string>
-                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="adL-Eh-y5K"/>
-                                                    </mask>
-                                                </variation>
-                                            </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_header" translatesAutoresizingMaskIntoConstraints="NO" id="VZd-Hy-faB">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="361"/>
+                                                <rect key="frame" x="0.0" y="110" width="320" height="236"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="223" id="1cQ-yX-wQh"/>
+                                                    <constraint firstAttribute="height" constant="236" id="nXy-39-G40"/>
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -572,17 +644,17 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badlight" translatesAutoresizingMaskIntoConstraints="NO" id="VEE-QW-jHQ">
-                                                <rect key="frame" x="8" y="588" width="312" height="248"/>
+                                                <rect key="frame" x="0.0" y="588" width="320" height="248"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="248" id="dEF-Zw-Umc"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6o-J1-gaw">
-                                                <rect key="frame" x="12" y="870" width="300" height="217"/>
+                                                <rect key="frame" x="12" y="870" width="300" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="647" id="Mhd-J7-NsJ"/>
                                                 </constraints>
-                                                <string key="text">Stealth Outdoor Lighting has been servicing Southeast Michigan for the past 20 years. We have consistently utilized the most efficient and best engineered products to provide sustainable, cost-effective, turn-key systems that provide decades of beautiful and safe, night-time environments. </string>
+                                                <string key="text">We also offer repair and replacement services for existing lighting systems. If your fixtures are beginning to look like the one above, or if your lighting system just isn't operating optimally, it's probably time to give us a call!</string>
                                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -592,25 +664,114 @@
                                                     </mask>
                                                 </variation>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-uj-sm7">
+                                                <rect key="frame" x="10" y="354" width="300" height="241"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="647" id="adL-Eh-y5K"/>
+                                                </constraints>
+                                                <string key="text">Stealth Outdoor Lighting has been servicing Southeast Michigan for the past 20 years. We have consistently utilized the most efficient and best engineered products to provide sustainable and cost-effective lighting systems. We not only add beauty to your night environment, but also greatly enhance your estate's night-time security.</string>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="adL-Eh-y5K"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leds" translatesAutoresizingMaskIntoConstraints="NO" id="of8-Uw-UD4">
+                                                <rect key="frame" x="0.0" y="1048" width="320" height="221"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="221" id="Htb-qV-dMV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4s-Wx-nMl">
+                                                <rect key="frame" x="12" y="1279" width="296" height="222"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="647" id="8Le-nr-7Of"/>
+                                                    <constraint firstAttribute="height" constant="222" id="9ig-8R-sMl"/>
+                                                </constraints>
+                                                <string key="text">Did you know that by upgrading your existing lighting system to LED, it is possible to save $100's every year in energy costs, even after the initial costs of the LED bulbs is taken into account? Stealth Outdoor Lighting is leading the way in adopting LED technology as part of it's effort to reduce consumer costs in a sustainable way. </string>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="8Le-nr-7Of"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="housetree" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-gf-OCM">
+                                                <rect key="frame" x="0.0" y="1502" width="320" height="221"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="221" id="dXA-uX-SOh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A quick note about this app:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVL-BI-VaH">
+                                                <rect key="frame" x="72" y="1776" width="177" height="22"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-BookIta" family="Bodoni 72" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22T-1U-IX7">
+                                                <rect key="frame" x="8" y="1795" width="304" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="647" id="4Gg-fZ-i5x"/>
+                                                    <constraint firstAttribute="height" constant="80" id="gm1-oT-v38"/>
+                                                </constraints>
+                                                <string key="text">This app does not track or collect any data. It does send two notifications a year (spring and fall) in order to alert our customers of our seasonal system tune ups. Thanks for downloading!</string>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="4Gg-fZ-i5x"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stealth Outdoor Lighting" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDz-lu-PSh">
+                                                <rect key="frame" x="50" y="0.0" width="221" height="96"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="5k7-uj-sm7" firstAttribute="top" secondItem="VZd-Hy-faB" secondAttribute="bottom" constant="10" id="0dy-8h-IiG"/>
+                                            <constraint firstItem="5k7-uj-sm7" firstAttribute="top" secondItem="VZd-Hy-faB" secondAttribute="bottom" constant="8" id="0dy-8h-IiG"/>
                                             <constraint firstItem="Y6o-J1-gaw" firstAttribute="top" secondItem="VEE-QW-jHQ" secondAttribute="bottom" constant="34" id="1z9-4x-rqB"/>
-                                            <constraint firstItem="VZd-Hy-faB" firstAttribute="top" secondItem="CPO-Fu-Ela" secondAttribute="top" id="DPC-jl-bOl"/>
+                                            <constraint firstItem="OVL-BI-VaH" firstAttribute="centerX" secondItem="fn3-gf-OCM" secondAttribute="centerX" id="7Kz-3E-6Zl"/>
+                                            <constraint firstItem="VZd-Hy-faB" firstAttribute="top" secondItem="CPO-Fu-Ela" secondAttribute="top" constant="110" id="DPC-jl-bOl"/>
+                                            <constraint firstItem="iDz-lu-PSh" firstAttribute="centerX" secondItem="VZd-Hy-faB" secondAttribute="centerX" id="FJO-Jw-qMH"/>
                                             <constraint firstItem="5k7-uj-sm7" firstAttribute="trailing" secondItem="VZd-Hy-faB" secondAttribute="trailing" id="G7D-JQ-i3h"/>
                                             <constraint firstItem="VZd-Hy-faB" firstAttribute="trailing" secondItem="VEE-QW-jHQ" secondAttribute="trailing" id="HXS-0u-FEI"/>
                                             <constraint firstAttribute="height" constant="952" id="Ikc-i7-r4d"/>
+                                            <constraint firstAttribute="trailing" secondItem="d4s-Wx-nMl" secondAttribute="trailing" constant="12" id="IxK-6n-CV1"/>
                                             <constraint firstAttribute="trailing" secondItem="Y6o-J1-gaw" secondAttribute="trailing" constant="8" id="JH3-0M-7uD"/>
+                                            <constraint firstItem="OVL-BI-VaH" firstAttribute="centerX" secondItem="d4s-Wx-nMl" secondAttribute="centerX" id="JP0-tf-kGd"/>
+                                            <constraint firstItem="fn3-gf-OCM" firstAttribute="leading" secondItem="of8-Uw-UD4" secondAttribute="leading" id="LHP-Ze-yRL"/>
+                                            <constraint firstItem="22T-1U-IX7" firstAttribute="top" secondItem="fn3-gf-OCM" secondAttribute="bottom" constant="72" id="Oz8-gm-XeA"/>
+                                            <constraint firstItem="of8-Uw-UD4" firstAttribute="leading" secondItem="VEE-QW-jHQ" secondAttribute="leading" id="P9m-Mh-XT6"/>
+                                            <constraint firstItem="iDz-lu-PSh" firstAttribute="leading" secondItem="CPO-Fu-Ela" secondAttribute="leading" constant="50" id="PXQ-zw-IeD"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="VEE-QW-jHQ" secondAttribute="trailing" constant="-8" id="PjX-4Q-7pg"/>
                                             <constraint firstAttribute="trailing" secondItem="5k7-uj-sm7" secondAttribute="trailing" constant="10" id="RHR-M0-LTM"/>
+                                            <constraint firstItem="VZd-Hy-faB" firstAttribute="top" secondItem="iDz-lu-PSh" secondAttribute="bottom" constant="14" id="SqU-io-xLx"/>
                                             <constraint firstItem="5k7-uj-sm7" firstAttribute="leading" secondItem="CPO-Fu-Ela" secondAttribute="leading" constant="10" id="TfF-6b-GuC"/>
                                             <constraint firstAttribute="bottom" secondItem="5k7-uj-sm7" secondAttribute="bottom" id="ZWf-31-BEH"/>
-                                            <constraint firstItem="VEE-QW-jHQ" firstAttribute="top" secondItem="5k7-uj-sm7" secondAttribute="bottom" id="bxU-xj-kI4"/>
+                                            <constraint firstItem="22T-1U-IX7" firstAttribute="trailing" secondItem="Y6o-J1-gaw" secondAttribute="trailing" id="brP-KB-ZRN"/>
+                                            <constraint firstAttribute="bottom" secondItem="OVL-BI-VaH" secondAttribute="bottom" constant="130" id="bxR-md-3VB"/>
+                                            <constraint firstItem="VEE-QW-jHQ" firstAttribute="top" secondItem="5k7-uj-sm7" secondAttribute="bottom" constant="-7" id="bxU-xj-kI4"/>
                                             <constraint firstItem="5k7-uj-sm7" firstAttribute="leading" secondItem="VZd-Hy-faB" secondAttribute="leading" id="cVb-oW-5kW"/>
                                             <constraint firstAttribute="height" constant="1928" id="dVs-pB-eGf"/>
+                                            <constraint firstItem="d4s-Wx-nMl" firstAttribute="leading" secondItem="Y6o-J1-gaw" secondAttribute="leading" id="iNg-l3-4ZR"/>
+                                            <constraint firstItem="d4s-Wx-nMl" firstAttribute="top" secondItem="of8-Uw-UD4" secondAttribute="bottom" constant="10" id="kSx-mC-OkN"/>
+                                            <constraint firstItem="of8-Uw-UD4" firstAttribute="trailing" secondItem="VEE-QW-jHQ" secondAttribute="trailing" id="nA1-0G-oHA"/>
+                                            <constraint firstItem="OVL-BI-VaH" firstAttribute="centerX" secondItem="22T-1U-IX7" secondAttribute="centerX" id="rN4-bm-zQJ"/>
                                             <constraint firstItem="Y6o-J1-gaw" firstAttribute="leading" secondItem="CPO-Fu-Ela" secondAttribute="leading" constant="12" id="reP-6w-sDm"/>
-                                            <constraint firstItem="VEE-QW-jHQ" firstAttribute="leading" secondItem="CPO-Fu-Ela" secondAttribute="leadingMargin" id="t6c-Um-4vQ"/>
+                                            <constraint firstItem="VEE-QW-jHQ" firstAttribute="leading" secondItem="CPO-Fu-Ela" secondAttribute="leadingMargin" constant="-8" id="t6c-Um-4vQ"/>
+                                            <constraint firstItem="iDz-lu-PSh" firstAttribute="top" secondItem="CPO-Fu-Ela" secondAttribute="top" id="tKA-7C-L7z"/>
+                                            <constraint firstAttribute="bottom" secondItem="d4s-Wx-nMl" secondAttribute="bottom" constant="427" id="u7V-eL-thJ"/>
+                                            <constraint firstItem="OVL-BI-VaH" firstAttribute="top" secondItem="fn3-gf-OCM" secondAttribute="bottom" constant="53" id="uZt-tn-ct9"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -626,9 +787,15 @@
                                 <constraints>
                                     <constraint firstAttribute="trailingMargin" secondItem="CPO-Fu-Ela" secondAttribute="trailing" constant="-8" id="LAS-2A-aZQ"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="CPO-Fu-Ela" secondAttribute="bottom" id="boJ-SN-6iU"/>
+                                    <constraint firstItem="CPO-Fu-Ela" firstAttribute="top" secondItem="5gy-g9-f74" secondAttribute="top" id="p5S-tV-ZJX"/>
                                     <constraint firstItem="CPO-Fu-Ela" firstAttribute="leading" secondItem="5gy-g9-f74" secondAttribute="leadingMargin" constant="-8" id="rGe-y1-2LN"/>
                                     <constraint firstItem="CPO-Fu-Ela" firstAttribute="top" secondItem="5gy-g9-f74" secondAttribute="topMargin" id="vN6-gB-ZYk"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vN6-gB-ZYk"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -638,8 +805,14 @@
                             <constraint firstItem="d44-Em-z3F" firstAttribute="top" secondItem="5gy-g9-f74" secondAttribute="bottom" id="c7V-bM-kzj"/>
                             <constraint firstItem="5gy-g9-f74" firstAttribute="leading" secondItem="Kxn-Eq-JNt" secondAttribute="leading" id="raR-OT-tAN"/>
                             <constraint firstAttribute="trailing" secondItem="5gy-g9-f74" secondAttribute="trailing" id="rlr-h9-yCA"/>
+                            <constraint firstItem="5gy-g9-f74" firstAttribute="top" secondItem="Kxn-Eq-JNt" secondAttribute="top" id="tjf-l5-RT6"/>
                             <constraint firstItem="CPO-Fu-Ela" firstAttribute="width" secondItem="Kxn-Eq-JNt" secondAttribute="width" id="tuR-sX-8Sq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0aJ-Hp-bGa"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="About Us" id="nOf-ua-zTh">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="maP-Tp-ai9">
@@ -677,13 +850,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Calendar" width="48" height="48"/>
+        <image name="Camera" width="48" height="38"/>
         <image name="about" width="415" height="180"/>
         <image name="about_header" width="526" height="361"/>
         <image name="badlight" width="519" height="361"/>
         <image name="dayfronthouse" width="986" height="653"/>
         <image name="gallery" width="415" height="180"/>
         <image name="gears" width="526" height="720"/>
+        <image name="housetree" width="526" height="361"/>
         <image name="imageplaceholder 2" width="300" height="250"/>
+        <image name="leds" width="527" height="361"/>
         <image name="quote" width="415" height="180"/>
         <image name="repair" width="415" height="180"/>
     </resources>

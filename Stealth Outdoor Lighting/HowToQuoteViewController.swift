@@ -11,6 +11,7 @@ import UIKit
 class HowToQuoteViewController: UIViewController {
     
     @IBOutlet weak var phoneNumber: UIButton!
+    @IBOutlet weak var compose: UIImageView!
     
     
     override func viewWillAppear(animated: Bool) {
@@ -18,6 +19,8 @@ class HowToQuoteViewController: UIViewController {
         
         phoneNumber.layer.borderWidth = 1.0
         phoneNumber.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        compose.alpha = 0.3
     }
 
     override func viewDidLoad() {

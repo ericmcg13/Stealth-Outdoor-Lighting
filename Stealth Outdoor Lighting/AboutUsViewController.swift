@@ -10,6 +10,18 @@ import UIKit
 
 class AboutUsViewController: UIViewController {
 
+    @IBOutlet weak var michigan: UIImageView!
+    @IBOutlet weak var tools: UIImageView!
+    @IBOutlet weak var lightbulb: UIImageView!
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        michigan.alpha = 0.3
+        tools.alpha = 0.3
+        lightbulb.alpha = 0.3
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

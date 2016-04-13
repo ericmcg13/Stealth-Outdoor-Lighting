@@ -17,13 +17,18 @@ class RepairViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var timerBtn: UIButton!
     @IBOutlet weak var otherBtn: UIButton!
     
-    let messageComposer = MessageComposer()
+    private let messageComposer = MessageComposer()
+    private var addressTF: UITextField!
+    private let defaults = NSUserDefaults.standardUserDefaults()
+    private let key = "StealthAddress"
     
-    struct repair {
-        static let lamps = "I need some lamps replaced."
-        static let wire = "There seems to be a wire cut somewhere."
-        static let timer = "The timer needs to be reset."
-        static let other = "Please enter your message here:"
+    var address: String?
+    
+    private struct repair {
+        static let lamps = "Replace lamps at: "
+        static let wire = "Cut wire at: "
+        static let timer = "Timer reset at: "
+        static let other = "Enter Message Here: "
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -44,24 +49,62 @@ class RepairViewController: UIViewController, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if !storedAddress() {
+            requestAddress()
+        }
 
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    func requestRepair(text: String) {
+    private func storedAddress() -> Bool {
+        if let defaultAddress = defaults.stringForKey(key) {
+            address = defaultAddress
+            print("True: \(address!)")
+            return true
+        }else {
+            print("False: \(address)")
+            return false
+        }
+    }
+    
+    private func requestAddress() {
+        
+        let alert = UIAlertController(title: "Please Enter Your Address", message: "Address will be saved on local device in order to quickly request service and repairs.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addTextFieldWithConfigurationHandler{ (addressTF) in
+            addressTF.placeholder = "address"
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (UIAlertAction) in
+            self.address = ""
+        }
+        let okAction = UIAlertAction(title: "Done", style: UIAlertActionStyle.Default) { (UIAlertAction) in
+            let textField = alert.textFields![0] as UITextField
+            self.address = textField.text
+            print("\(self.address)")
+            
+            if self.address != nil {
+                self.defaults.setValue("\(self.address!)", forKey: self.key)
+                self.defaults.synchronize()
+            }
+            
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(okAction)
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    private func requestRepair(text: String) {
         
         if messageComposer.canSendText() {
             
             let messageComposeVC = messageComposer.sendMessage(text, attachment: nil)
             presentViewController(messageComposeVC, animated: true, completion: nil)
+            
         }else {
             print("There was a problem sending the text.")
         }
-        
     }
     
     @IBAction func homeBtn(sender: UIBarButtonItem) {
@@ -69,23 +112,22 @@ class RepairViewController: UIViewController, UINavigationControllerDelegate {
         if let homeVC = storyboard!.instantiateViewControllerWithIdentifier("homeVC") as? HomeViewController {
             presentViewController(homeVC, animated: true, completion: nil)
         }
-        
     }
         
     @IBAction func lampsAction(sender: UIButton) {
-        requestRepair(repair.lamps)
+        requestRepair(repair.lamps + "\(self.address!)")
     }
     
     @IBAction func wireAction(sender: UIButton) {
-        requestRepair(repair.wire)
+        requestRepair(repair.wire + "\(self.address!)")
     }
     
     @IBAction func timerAction(sender: UIButton) {
-        requestRepair(repair.timer)
+        requestRepair(repair.timer + "\(self.address!)")
     }
 
     @IBAction func otherAction(sender: UIButton) {
-        requestRepair(repair.other)
+        requestRepair("\(self.address!)" + repair.other)
     }
     
 

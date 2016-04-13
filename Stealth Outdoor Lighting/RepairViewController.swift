@@ -21,8 +21,7 @@ class RepairViewController: UIViewController, UINavigationControllerDelegate {
     private var addressTF: UITextField!
     private let defaults = NSUserDefaults.standardUserDefaults()
     private let key = "StealthAddress"
-    
-    var address: String?
+    private var address: String?
     
     private struct repair {
         static let lamps = "Replace lamps at: "
@@ -87,7 +86,6 @@ class RepairViewController: UIViewController, UINavigationControllerDelegate {
                 self.defaults.setValue("\(self.address!)", forKey: self.key)
                 self.defaults.synchronize()
             }
-            
         }
         alert.addAction(cancelAction)
         alert.addAction(okAction)

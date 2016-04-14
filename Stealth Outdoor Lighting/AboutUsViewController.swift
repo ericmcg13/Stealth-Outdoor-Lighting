@@ -38,6 +38,21 @@ class AboutUsViewController: UIViewController {
         
     }
     
+    @IBAction func message(sender: UIButton) {
+        
+        let text = ""
+        
+        if messageComposer.canSendText() {
+            
+            let messageComposeVC = messageComposer.sendMessage(text, attachment: nil)
+            presentViewController(messageComposeVC, animated: true, completion: nil)
+            
+        }else {
+            print("There was a problem sending the text.")
+        }
+        
+    }
     
+
     
 }

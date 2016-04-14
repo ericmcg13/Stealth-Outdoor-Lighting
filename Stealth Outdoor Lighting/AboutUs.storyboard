@@ -228,13 +228,29 @@
                                     <action selector="phone:" destination="lPW-3n-Wnu" eventType="touchUpInside" id="h2q-hR-4qr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nr-fg-Mr4" userLabel="Message">
+                                <rect key="frame" x="16" y="1632" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Efe-1J-pw6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="eNi-p7-vtc"/>
+                                    <constraint firstAttribute="width" constant="50" id="ivn-XH-5MI"/>
+                                    <constraint firstAttribute="height" constant="50" id="xsw-vG-Elt"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="message"/>
+                                <connections>
+                                    <action selector="message:" destination="lPW-3n-Wnu" eventType="touchUpInside" id="ELJ-G5-2cR"/>
+                                    <action selector="phone:" destination="lPW-3n-Wnu" eventType="touchUpInside" id="6gh-bI-hWN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1317274306" green="0.1317274306" blue="0.1317274306" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="LXo-OC-U7j" secondAttribute="bottom" id="G2g-vA-krf"/>
                             <constraint firstItem="LXo-OC-U7j" firstAttribute="top" secondItem="fGb-JJ-hGb" secondAttribute="top" id="PsS-Sh-obv"/>
                             <constraint firstItem="yBE-AY-ky0" firstAttribute="width" secondItem="fGb-JJ-hGb" secondAttribute="width" id="UA9-iB-pCJ"/>
+                            <constraint firstItem="xmV-kv-RHr" firstAttribute="top" secondItem="4nr-fg-Mr4" secondAttribute="bottom" constant="8" id="fxo-kl-WFr"/>
                             <constraint firstAttribute="trailing" secondItem="LXo-OC-U7j" secondAttribute="trailing" id="hkh-NX-QVl"/>
+                            <constraint firstItem="4nr-fg-Mr4" firstAttribute="leading" secondItem="fGb-JJ-hGb" secondAttribute="leadingMargin" id="lGH-wx-8Sl"/>
                             <constraint firstItem="xmV-kv-RHr" firstAttribute="top" secondItem="Fp1-vt-fUv" secondAttribute="bottom" constant="8" id="n6x-ut-aOW"/>
                             <constraint firstItem="LXo-OC-U7j" firstAttribute="leading" secondItem="fGb-JJ-hGb" secondAttribute="leading" id="qIp-wK-glk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fp1-vt-fUv" secondAttribute="trailing" id="uz3-Qh-JXC"/>
@@ -518,6 +534,7 @@
         <image name="Calendar" width="48" height="48"/>
         <image name="homeicon" width="512" height="512"/>
         <image name="lightbulb" width="321" height="512"/>
+        <image name="message" width="641" height="641"/>
         <image name="michigan" width="866" height="905"/>
         <image name="phone" width="512" height="512"/>
         <image name="pic15" width="986" height="653"/>

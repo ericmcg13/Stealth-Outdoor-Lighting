@@ -11,8 +11,8 @@ import UIKit
 class HowToQuoteViewController: UIViewController {
     
     @IBOutlet weak var phoneNumber: UIButton!
-    @IBOutlet weak var compose: UIImageView!
     
+    let messageComposer = MessageComposer()
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
@@ -20,7 +20,6 @@ class HowToQuoteViewController: UIViewController {
         phoneNumber.layer.borderWidth = 1.0
         phoneNumber.layer.borderColor = UIColor.whiteColor().CGColor
         
-        compose.alpha = 0.3
     }
 
     override func viewDidLoad() {
@@ -33,16 +32,8 @@ class HowToQuoteViewController: UIViewController {
     }
     
     @IBAction func phoneNumberAction(sender: UIButton) {
-        makePhoneCall("2487658633")
+        messageComposer.makePhoneCall("2487658633")
     }
 
-    private func makePhoneCall(phoneNum: String) {
-        if let phoneCallURL = NSURL(string: "tel://\(phoneNum)") {
-            let application = UIApplication.sharedApplication()
-            if application.canOpenURL(phoneCallURL) {
-                application.openURL(phoneCallURL)
-            }
-        }
-    }
 
 }

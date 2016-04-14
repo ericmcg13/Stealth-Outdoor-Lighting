@@ -125,7 +125,7 @@ class RepairViewController: UIViewController, UINavigationControllerDelegate {
     }
 
     @IBAction func otherAction(sender: UIButton) {
-        requestRepair("\(self.address!)" + repair.other)
+        requestRepair("\(self.address!) " + repair.other)
     }
     
 

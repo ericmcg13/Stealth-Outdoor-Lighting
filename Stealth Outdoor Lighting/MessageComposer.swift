@@ -47,4 +47,13 @@ class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
         return messageVC
     }
     
+    func makePhoneCall(phoneNum: String) {
+        if let phoneCallURL = NSURL(string: "tel://\(phoneNum)") {
+            let application = UIApplication.sharedApplication()
+            if application.canOpenURL(phoneCallURL) {
+                application.openURL(phoneCallURL)
+            }
+        }
+    }
+    
 }

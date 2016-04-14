@@ -2,40 +2,42 @@
 //  AboutUsViewController.swift
 //  Stealth Outdoor Lighting
 //
-//  Created by Eric McGaughey on 4/8/16.
+//  Created by Eric McGaughey on 4/14/16.
 //  Copyright © 2016 Eric McGaughey. All rights reserved.
 //
 
 import UIKit
 
 class AboutUsViewController: UIViewController {
+    
+    let messageComposer = MessageComposer()
 
-    @IBOutlet weak var michigan: UIImageView!
-    @IBOutlet weak var tools: UIImageView!
-    @IBOutlet weak var lightbulb: UIImageView!
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(true)
-        
-        michigan.alpha = 0.3
-        tools.alpha = 0.3
-        lightbulb.alpha = 0.3
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func homeBtn(sender: UIBarButtonItem) {
         
-        if let homeVC = storyboard!.instantiateViewControllerWithIdentifier("homeVC") as? HomeViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if let homeVC = storyboard.instantiateViewControllerWithIdentifier("homeVC") as? HomeViewController {
             presentViewController(homeVC, animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func phone(sender: UIButton) {
+        
+        messageComposer.makePhoneCall("2487658633")
         
     }
-
+    
+    
+    
 }

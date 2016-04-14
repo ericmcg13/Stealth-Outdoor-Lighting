@@ -12,6 +12,9 @@
 		9D45A2191CBF9029006580A5 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A2181CBF9029006580A5 /* SliderViewController.swift */; };
 		9D45A21B1CBF9340006580A5 /* AboutLEDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A21A1CBF9340006580A5 /* AboutLEDViewController.swift */; };
 		9D45A21D1CBF947B006580A5 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A21C1CBF947B006580A5 /* AboutUsViewController.swift */; };
+		9D5A36061CC03019009B7250 /* HowToQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A36051CC03019009B7250 /* HowToQuote.swift */; };
+		9D5A36081CC03048009B7250 /* OptionOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A36071CC03048009B7250 /* OptionOneViewController.swift */; };
+		9D5A360A1CC03054009B7250 /* OptionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A36091CC03054009B7250 /* OptionTwoViewController.swift */; };
 		9D91DC4F1CB58B9B00549635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */; };
 		9D91DC511CB58B9B00549635 /* ProductGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC501CB58B9B00549635 /* ProductGalleryViewController.swift */; };
 		9D91DC541CB58B9B00549635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC521CB58B9B00549635 /* Main.storyboard */; };
@@ -25,7 +28,6 @@
 		9D91DC8E1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D91DC8D1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png */; };
 		9D91DC931CBAA4AC00549635 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC921CBAA4AC00549635 /* HomeViewController.swift */; };
 		9D91DC991CBAD0F800549635 /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DC981CBAD0F800549635 /* MessageComposer.swift */; };
-		9DEA611A1CBCF84B00742A60 /* HowToQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA61191CBCF84B00742A60 /* HowToQuoteViewController.swift */; };
 		9DEA611C1CBD07D500742A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA611B1CBD07D500742A60 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,9 @@
 		9D45A2181CBF9029006580A5 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		9D45A21A1CBF9340006580A5 /* AboutLEDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutLEDViewController.swift; sourceTree = "<group>"; };
 		9D45A21C1CBF947B006580A5 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		9D5A36051CC03019009B7250 /* HowToQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToQuote.swift; sourceTree = "<group>"; };
+		9D5A36071CC03048009B7250 /* OptionOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionOneViewController.swift; sourceTree = "<group>"; };
+		9D5A36091CC03054009B7250 /* OptionTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionTwoViewController.swift; sourceTree = "<group>"; };
 		9D91DC4B1CB58B9A00549635 /* Stealth Outdoor Lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stealth Outdoor Lighting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D91DC4E1CB58B9B00549635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D91DC501CB58B9B00549635 /* ProductGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGalleryViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +76,6 @@
 		9D91DC8D1CB6E62800549635 /* Rectangle 12 + DSC_0088 + Triangle 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 12 + DSC_0088 + Triangle 3.png"; sourceTree = "<group>"; };
 		9D91DC921CBAA4AC00549635 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9D91DC981CBAD0F800549635 /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageComposer.swift; sourceTree = "<group>"; };
-		9DEA61191CBCF84B00742A60 /* HowToQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToQuoteViewController.swift; sourceTree = "<group>"; };
 		9DEA611B1CBD07D500742A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,7 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				9D91DC891CB6742800549635 /* QuoteViewController.swift */,
-				9DEA61191CBCF84B00742A60 /* HowToQuoteViewController.swift */,
+				9D5A36051CC03019009B7250 /* HowToQuote.swift */,
+				9D5A36071CC03048009B7250 /* OptionOneViewController.swift */,
+				9D5A36091CC03054009B7250 /* OptionTwoViewController.swift */,
 			);
 			name = Quote;
 			sourceTree = "<group>";
@@ -348,13 +354,15 @@
 			files = (
 				9D91DC8C1CB6B90500549635 /* RepairViewController.swift in Sources */,
 				9D45A21D1CBF947B006580A5 /* AboutUsViewController.swift in Sources */,
+				9D5A36061CC03019009B7250 /* HowToQuote.swift in Sources */,
 				9D91DC511CB58B9B00549635 /* ProductGalleryViewController.swift in Sources */,
 				9D45A21B1CBF9340006580A5 /* AboutLEDViewController.swift in Sources */,
 				9D45A2191CBF9029006580A5 /* SliderViewController.swift in Sources */,
 				9D91DC931CBAA4AC00549635 /* HomeViewController.swift in Sources */,
 				9D45A2171CBF8F0F006580A5 /* AboutStealthViewController.swift in Sources */,
+				9D5A36081CC03048009B7250 /* OptionOneViewController.swift in Sources */,
+				9D5A360A1CC03054009B7250 /* OptionTwoViewController.swift in Sources */,
 				9D91DC4F1CB58B9B00549635 /* AppDelegate.swift in Sources */,
-				9DEA611A1CBCF84B00742A60 /* HowToQuoteViewController.swift in Sources */,
 				9D91DC8A1CB6742800549635 /* QuoteViewController.swift in Sources */,
 				9D91DC991CBAD0F800549635 /* MessageComposer.swift in Sources */,
 				9D91DC811CB5915700549635 /* ImageViewController.swift in Sources */,

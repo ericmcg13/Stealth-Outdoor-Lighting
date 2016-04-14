@@ -39,10 +39,14 @@ class QuoteViewController: UIViewController, UINavigationControllerDelegate, UII
         imagePicker.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func infoBtn(sender: UIButton) {
+        
+        if let howToVC = storyboard!.instantiateViewControllerWithIdentifier("howtoquote") as? HowToQuote {
+            presentViewController(howToVC, animated: true, completion: nil)
+        }
+        
     }
+    
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
@@ -110,16 +114,5 @@ class QuoteViewController: UIViewController, UINavigationControllerDelegate, UII
             print("Cannot send text.")
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

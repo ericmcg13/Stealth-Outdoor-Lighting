@@ -72,7 +72,7 @@
                                                         <rect key="frame" x="14" y="5" width="292" height="206"/>
                                                         <string key="text">Stealth Outdoor Lighting has been servicing Southeast Michigan for the past 20 years. We have consistently utilized the most efficient and best engineered products to provide sustainable and cost-effective lighting systems. We not only add beauty to your night environment, but also greatly enhance your estate's night-time security.</string>
                                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="19"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -219,7 +219,6 @@
                                 <state key="normal" title="Button" image="message"/>
                                 <connections>
                                     <action selector="message:" destination="lPW-3n-Wnu" eventType="touchUpInside" id="ELJ-G5-2cR"/>
-                                    <action selector="phone:" destination="lPW-3n-Wnu" eventType="touchUpInside" id="6gh-bI-hWN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -481,7 +480,7 @@
                                     <constraint firstAttribute="height" constant="70" id="ann-RV-gCY"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are the only lighting company that offers repair services for any type of landscape lighting sytem." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cD-1N-cCw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are the only lighting company that offers repair services for any type of landscape lighting system." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cD-1N-cCw">
                                 <rect key="frame" x="109" y="57" width="195" height="82"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>

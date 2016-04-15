@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D91DC4A1CB58B9A00549635"
-               BuildableName = "Stealth Outdoor Lighting.app"
-               BlueprintName = "Stealth Outdoor Lighting"
-               ReferencedContainer = "container:Stealth Outdoor Lighting.xcodeproj">
+               BuildableName = "StealthLED.app"
+               BlueprintName = "StealthLED"
+               ReferencedContainer = "container:StealthLED.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D91DC5E1CB58B9B00549635"
-               BuildableName = "Stealth Outdoor LightingTests.xctest"
-               BlueprintName = "Stealth Outdoor LightingTests"
-               ReferencedContainer = "container:Stealth Outdoor Lighting.xcodeproj">
+               BuildableName = "StealthLED.xctest"
+               BlueprintName = "StealthLEDTests"
+               ReferencedContainer = "container:StealthLED.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D91DC691CB58B9B00549635"
-               BuildableName = "Stealth Outdoor LightingUITests.xctest"
-               BlueprintName = "Stealth Outdoor LightingUITests"
-               ReferencedContainer = "container:Stealth Outdoor Lighting.xcodeproj">
+               BuildableName = "StealthLED.xctest"
+               BlueprintName = "StealthLEDUITests"
+               ReferencedContainer = "container:StealthLED.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D91DC4A1CB58B9A00549635"
-            BuildableName = "Stealth Outdoor Lighting.app"
-            BlueprintName = "Stealth Outdoor Lighting"
-            ReferencedContainer = "container:Stealth Outdoor Lighting.xcodeproj">
+            BuildableName = "StealthLED.app"
+            BlueprintName = "StealthLED"
+            ReferencedContainer = "container:StealthLED.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D91DC4A1CB58B9A00549635"
-            BuildableName = "Stealth Outdoor Lighting.app"
-            BlueprintName = "Stealth Outdoor Lighting"
-            ReferencedContainer = "container:Stealth Outdoor Lighting.xcodeproj">
+            BuildableName = "StealthLED.app"
+            BlueprintName = "StealthLED"
+            ReferencedContainer = "container:StealthLED.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D91DC4A1CB58B9A00549635"
-            BuildableName = "Stealth Outdoor Lighting.app"
-            BlueprintName = "Stealth Outdoor Lighting"
-            ReferencedContainer = "container:Stealth Outdoor Lighting.xcodeproj">
+            BuildableName = "StealthLED.app"
+            BlueprintName = "StealthLED"
+            ReferencedContainer = "container:StealthLED.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

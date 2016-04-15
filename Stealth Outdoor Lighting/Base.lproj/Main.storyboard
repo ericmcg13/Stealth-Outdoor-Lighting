@@ -367,7 +367,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URQ-FA-LYc">
                                         <rect key="frame" x="3" y="47" width="283" height="70"/>
-                                        <string key="text">If you are shopping around or just want a general design ideas, feel free to submit and photo and we'll contact you shortly with a proposal.</string>
+                                        <string key="text">If you are shopping around or just want some general design ideas, feel free to submit a photo and we'll contact you shortly with a proposal.</string>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-BookIta" family="Bodoni 72" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -571,7 +571,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FnR-Ig-5G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2109" y="122"/>
+            <point key="canvasLocation" x="2109" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NAk-F0-sEU">

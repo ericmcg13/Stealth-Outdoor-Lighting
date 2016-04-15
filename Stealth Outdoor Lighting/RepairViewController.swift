@@ -71,10 +71,10 @@ class RepairViewController: UIViewController, UINavigationControllerDelegate {
         let alert = UIAlertController(title: "Please Enter Your Address", message: "Address will be saved on local device in order to quickly request service and repairs.", preferredStyle: UIAlertControllerStyle.Alert)
         
         alert.addTextFieldWithConfigurationHandler{ (addressTF) in
-            addressTF.placeholder = "address"
+            addressTF.placeholder = "Enter Address Here"
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (UIAlertAction) in
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Destructive) { (UIAlertAction) in
             self.address = ""
         }
         let okAction = UIAlertAction(title: "Done", style: UIAlertActionStyle.Default) { (UIAlertAction) in
